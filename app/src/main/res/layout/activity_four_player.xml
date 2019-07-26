@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@android:color/background_dark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FourPlayerActivity">
+    <android.support.constraint.ConstraintLayout
+            android:rotation="90"
+            android:layout_width="198dp"
+            android:layout_height="336dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.08" app:layout_constraintVertical_bias="0.959"
+            android:layout_marginBottom="8dp" android:background="#00FF0000">
+
+        <Button
+                android:text="-"
+                android:layout_width="56dp"
+                android:layout_height="56dp" android:id="@+id/player3minus"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="30sp" android:textColor="#FFFFFF" android:background="#000C0C0C"/>
+        <TextView
+                android:text="40"
+                android:layout_width="71dp"
+                android:layout_height="56dp" android:id="@+id/player3life"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" android:textColor="#FFFFFF"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/player3plus" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp" app:layout_constraintStart_toEndOf="@+id/player3minus"
+                android:textSize="36sp" android:gravity="center" android:textStyle="bold"/>
+        <Button
+                android:text="+"
+                android:layout_width="56dp"
+                android:layout_height="56dp" android:id="@+id/player3plus" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.954" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.497"
+                android:textSize="30sp" android:textColor="#FFFFFF" android:background="#00000000"/>
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+            android:rotation="90"
+            android:layout_width="198dp"
+            android:layout_height="336dp"
+            tools:layout_editor_absoluteX="16dp" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+                android:text="-"
+                android:layout_width="56dp"
+                android:layout_height="56dp" android:id="@+id/player1minus"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="30sp" android:textColor="#FFFFFF" android:background="#00000000"/>
+        <TextView
+                android:text="40"
+                android:layout_width="71dp"
+                android:layout_height="56dp" android:id="@+id/player1life"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" android:textColor="#00BCD4"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/player1plus" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp" app:layout_constraintStart_toEndOf="@+id/player1minus"
+                android:textSize="36sp" android:gravity="center" android:textStyle="bold"/>
+        <Button
+                android:text="+"
+                android:layout_width="56dp"
+                android:layout_height="56dp" android:id="@+id/player1plus" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.954" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.497"
+                android:textSize="30sp" android:textColor="#FDFDFD" android:background="#00000000"/>
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+            android:rotation="-90"
+            android:layout_width="198dp"
+            android:layout_height="336dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0" app:layout_constraintVertical_bias="0.958"
+            android:layout_marginBottom="8dp" android:background="#00FD0404">
+
+        <Button
+                android:text="-"
+                android:layout_width="56dp"
+                android:layout_height="56dp" android:id="@+id/player4minus"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="30sp" android:textColor="#FFFFFF" android:background="#00030303"/>
+        <TextView
+                android:text="40"
+                android:layout_width="71dp"
+                android:layout_height="56dp" android:id="@+id/player4life"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" android:textColor="#4CAF50"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/player4plus" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp" app:layout_constraintStart_toEndOf="@+id/player4minus"
+                android:textSize="36sp" android:gravity="center" android:textStyle="bold"
+                android:background="#00E90000"/>
+        <Button
+                android:text="+"
+                android:layout_width="56dp"
+                android:layout_height="56dp" android:id="@+id/player4plus" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.954" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.497"
+                android:textSize="30sp" android:textColor="#FFFFFF" android:background="#00000000"/>
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+            android:rotation="-90"
+            android:layout_width="198dp"
+            android:layout_height="336dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+                android:text="-"
+                android:layout_width="56dp"
+                android:layout_height="56dp" android:id="@+id/player2minus"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="30sp" android:textColor="#FFFFFF" android:background="#00000000"/>
+        <TextView
+                android:text="40"
+                android:layout_width="71dp"
+                android:layout_height="56dp" android:id="@+id/player2life"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" android:textColor="#F80101"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/player2plus" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp" app:layout_constraintStart_toEndOf="@+id/player2minus"
+                android:textSize="36sp" android:gravity="center" android:textStyle="bold"/>
+        <Button
+                android:text="+"
+                android:layout_width="54dp"
+                android:layout_height="56dp" android:id="@+id/player2plus" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.954" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.497"
+                android:textSize="30sp" android:textColor="#FFFFFF" android:background="#00000000"/>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

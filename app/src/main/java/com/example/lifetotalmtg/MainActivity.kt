@@ -88,6 +88,13 @@ class MainActivity : AppCompatActivity() {
                 }
                 startActivity(intent)
             }
+            4 -> {
+                val intent = Intent(this, FourPlayerActivity::class.java).apply{
+                    putExtra("PLAYERS", players)
+                    putExtra("HEALTH", health)
+                }
+                startActivity(intent)
+            }
             else -> println("Not setup yet")
         }
     }
